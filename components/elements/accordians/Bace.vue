@@ -16,7 +16,7 @@
       <slot name="header" />
       <svg
         v-if="!isExpanded"
-        class="w-5 mr-auto absolute top-3 right-4"
+        class="w-5 mr-auto absolute top-6 right-4"
         stroke="currentColor"
         viewBox="0 0 24 24"
         fill="none"
@@ -26,7 +26,7 @@
       </svg>
       <svg
         v-else
-        class="w-5 absolute top-3 right-4"
+        class="w-5 absolute top-6 right-4"
         stroke="currentColor"
         viewBox="0 0 24 24"
         fill="none"
@@ -38,7 +38,7 @@
         />
       </svg>
     </header>
-    <main v-if="isExpanded" class="bg-white text-gray-400">
+    <main v-if="isExpanded" class="bg-gray-100 text-gray-400 border border-l-2 border-r-2 py-2">
       <slot name="content" />
     </main>
   </div>

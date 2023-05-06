@@ -1,9 +1,19 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="min-h-screen md:px-0 px-5 mt-4 md:mt-8">
-    <img src="/images/dc_05.jpg" alt="" class="w-full h-80" srcset="" />
     <div
-      class="bg-blue-400 text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4"
+      :class="['h-60 md:h-80 w-full overflow-hidden rounded-lg']"
+    >
+      <img
+        class="object-cover h-full w-full"
+        src="/images/dc_08-copy.jpg"
+        alt=""
+      />
+    </div>
+
+    <!-- <LazyAccordiansSlide :slides="resources" /> -->
+    <div
+      class="bg-[#81d8d0] text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4"
     >
       <div
         class="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center"
@@ -13,7 +23,7 @@
           >We Are Daikin Official Channel Partner</span
         >
       </div>
-      <div class="md:w-28 mr-4 whitespace-nowrap bg-pink-400 text-white p-2">
+      <div class="md:w-28 mr-4 whitespace-nowrap bg-[#333333] text-white p-2 rounded-md">
         <button type="submit" @click="$router.push('/contact')">
           Get in Touch
         </button>
@@ -144,7 +154,7 @@
       </div>
     </div>
     <div
-      class="my-12 flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between bg-blue-400 text-white px-4 py-8"
+      class="my-12 flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between bg-[#81d8d0] text-white px-4 py-8"
     >
       <div class="md:w-1/3 flex flex-col">
         <span
@@ -301,9 +311,11 @@
       </div>
     </div>
     <div class="my-12">
-      <h1 class="my-12">FAQ's ON EXHIBITION STALL DESIGN</h1>
+      <h1 class="my-6 font-bold text-lg leading-5">
+        FAQ's ON EXHIBITION STALL DESIGN
+      </h1>
       <LazyAccordiansBace
-        extra-class="px-4 py-2"
+        extra-class="px-4 py-4 border border-b-2"
         class="text-blue-1500 md:text-xl sm:text-sm xs: text-sm"
       >
         <template #header>
@@ -317,7 +329,7 @@
         </template>
       </LazyAccordiansBace>
       <LazyAccordiansBace
-        extra-class="px-4 py-2"
+        extra-class="px-4 py-4 border border-b-2"
         class="text-blue-1500 md:text-xl sm:text-sm xs: text-sm"
       >
         <template #header>
@@ -331,7 +343,7 @@
         </template>
       </LazyAccordiansBace>
       <LazyAccordiansBace
-        extra-class="px-4 py-2"
+        extra-class="px-4 py-4 border border-b-2"
         class="text-blue-1500 md:text-xl sm:text-sm xs: text-sm"
       >
         <template #header>
@@ -351,5 +363,20 @@
 <script>
 export default {
   name: "NuxtTutorial",
+  computed: {
+    resources() {
+      return [
+        {
+          bgImg: `/images/dc_08-copy.jpg`,
+        },
+        {
+          bgImg: `/images/dc_09-copy.jpg`,
+        },
+        {
+          bgImg: `/images/dc_14-copy.jpg`,
+        },
+      ];
+    },
+  },
 };
 </script>

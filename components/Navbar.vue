@@ -1,17 +1,17 @@
 <template>
   <div>
-    <div class="bg-blue-400">
+    <div class="bg-[#81d8d0]">
       <div class="container max-w-6xl py-2 mx-auto hidden md:block">
         <div class="flex items-center justify-between">
           <div class="flex space-x-6 items-center">
-            <div class="inline-flex">
+            <div class="inline-flex text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 mr-2"
+                class="w-6 h-6 mr-2 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -21,14 +21,14 @@
               </svg>
               support@homefort-systems.dev
             </div>
-            <div class="inline-flex">
+            <div class="inline-flex text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 mr-2"
+                class="w-6 h-6 mr-2 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -43,14 +43,14 @@
               </svg>
               29 Nicolas str, New York, 987597-50
             </div>
-            <div class="inline-flex">
+            <div class="inline-flex text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
-                class="w-6 h-6 mr-2"
+                class="w-6 h-6 mr-2 text-white"
               >
                 <path
                   stroke-linecap="round"
@@ -109,7 +109,7 @@
             </div>
             <div class="cursor-pointer">
               <button
-                class="px-4 py-2 bg-gray-800 text-white cursor-pointer rounded-md"
+                class="px-4 py-2 bg-[#333333] text-white cursor-pointer rounded-md"
               >
                 Get Tuch
               </button>
@@ -121,121 +121,44 @@
     <div class="min-h-full">
       <nav class="bg-white">
         <div class="mx-auto max-w-6xl">
-          <div class="flex h-16 items-center justify-between mx-4">
-            <div class="flex items-center">
-              <div class="flex-shrink-0">
-                <img
-                  class="h-16 my-2"
-                  src="/images/b-a-logo.png"
-                  alt="Your Company"
-                />
-              </div>
-              <div class="hidden md:block">
+          <div class="flex h-16 items-center mx-4 my-2">
+            <div class="flex-shrink-0">
+              <img
+                class="h-12 my-2"
+                src="/images/b-a-logo.png"
+                alt="Your Company"
+              />
+            </div>
+            <div class="mx-auto">
+              <div class="hidden md:block mx-auto">
                 <div class="ml-10 flex items-baseline space-x-4">
-                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:text-[#333333]  hover:border-b-2 border-[#81d8d0]  hover:text-white" -->
                   <a
                     href="/"
-                    class="text-blue-400 hover:bg-gray-700 rounded-md px-3 py-2 text-sm font-medium"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
                     aria-current="page"
                     >Home</a
                   >
                   <a
                     href="/about-us"
-                    class="text-blue-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
                     >About Us</a
                   >
                   <a
                     href="/products"
-                    class="text-blue-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
                     >Product</a
                   >
                   <a
                     href="/our-projects"
-                    class="text-blue-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
                     >Our Projects</a
                   >
                   <a
                     href="/contact"
-                    class="text-blue-400 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
                     >Contact</a
                   >
-                </div>
-              </div>
-            </div>
-            <div class="hidden md:block">
-              <div class="ml-4 flex items-center md:ml-6">
-                <button
-                  type="button"
-                  class="rounded-full p-1 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    class="w-6 h-6 text-blue-400"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M8 16l2.879-2.879m0 0a3 3 0 104.243-4.242 3 3 0 00-4.243 4.242zM21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </button>
-
-                <!-- Profile dropdown -->
-                <div class="relative ml-3">
-                  <div>
-                    <button
-                      type="button"
-                      class="flex max-w-xs items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      id="user-menu-button"
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6 text-blue-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="relative ml-3">
-                  <div>
-                    <button
-                      type="button"
-                      class="flex max-w-xs items-center rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                      id="user-menu-button"
-                      aria-expanded="false"
-                      aria-haspopup="true"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="w-6 h-6 text-blue-400"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-                        />
-                      </svg>
-                    </button>
-                  </div>
                 </div>
               </div>
             </div>
@@ -243,7 +166,7 @@
               <!-- Mobile menu button -->
               <button
                 type="button"
-                class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
                 @click="mobileToggleExpand = !mobileToggleExpand"
@@ -287,7 +210,7 @@
         <div
           :class="[
             mobileToggleExpand
-              ? 'h-screen pb-20 overflow-y-scroll pt-2'
+              ? 'h-screen pb-20 overflow-y-scroll pt-2 bg-[#81d8d0]'
               : 'h-0 overflow-hidden',
             'md:hidden  transition-height duration-300',
           ]"
@@ -295,28 +218,28 @@
           <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <a
               href="/"
-              class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
               >Home</a
             >
             <a
               href="/about-us"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
               >About Us</a
             >
             <a
               href="/products"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
               >Products</a
             >
             <a
               href="/our-projects"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
               >Our Projects</a
             >
             <a
               href="contact"
-              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
               >Contacts</a
             >
           </div>
