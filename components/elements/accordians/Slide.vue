@@ -8,7 +8,7 @@
     >
       <div
         :class="[
-          'md:h-80 bg-gray-200 w-full overflow-hidden rounded-lg hidden md:block',
+          'md:h-80 bg-gray-200 w-full overflow-hidden rounded-lg hidden md:block ',
         ]"
       >
         <img
@@ -31,33 +31,49 @@
               :key="index"
               :class="[
                 currentIndex === index && '!bg-opacity-100',
-                'h-2 cursor-pointer w-2 rounded-full bg-primary-400 bg-opacity-50 hover:bg-opacity-100 inline-block ml-1 active:bg-primary-200',
+                'h-2 cursor-pointer w-2 rounded-full bg-[#81d8d0] bg-opacity-50 hover:bg-opacity-100 inline-block ml-1 active:bg-[#81d8d0]',
               ]"
               @click="currentIndex = index"
             ></span>
           </div>
         </div>
-        <div
-          class="h-10 flex justify-between z-10 absolute items-center pin-center w-full"
-        >
-          <WButtonsBase
-            icon="left-chevron"
-            type="blank"
-            class="flex text-base font-semibold text-primary-600 bg-primary-200 w-8 h-8 rounded-r-lg pointer-events-auto"
-            @click.native="prev"
-          >
-          </WButtonsBase>
-
-          <WButtonsBase
-            icon="right-chevron"
-            type="blank"
-            class="flex text-base font-semibold text-primary-600 bg-primary-200 w-8 h-8 rounded-l-lg pointer-events-auto"
-            @click.native="next"
-          >
-          </WButtonsBase>
-        </div>
       </div>
       <div
+        class="h-10 flex justify-between z-10 absolute items-center pin-center w-full"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          @click="prev"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          class="w-6 h-6"
+          stroke="currentColor"
+          @click="next"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </div>
+      <!-- <div
         v-if="slides[currentIndex].description"
         id="content"
         class="md:absolute flex flex-col items-start px-10 max-w-md"
@@ -88,7 +104,7 @@
             >{{ slides[currentIndex].button.text }}</WButtonsBase
           >
         </span>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -116,7 +132,7 @@ export default {
       this.currentIndex++;
       if (this.currentIndex > this.slides.length - 1) {
         this.currentIndex = 0;
-      }
+      } 
     },
     prev() {
       this.currentIndex--;

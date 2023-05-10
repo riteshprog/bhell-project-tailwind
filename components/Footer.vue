@@ -96,7 +96,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between mx-4 mb-20">
+      <div class="flex justify-between mx-4">
         <p class="text-xs text-[#898b92] leading-5">
           2016 All Rights Reserved by Atmos Aircon
         </p>

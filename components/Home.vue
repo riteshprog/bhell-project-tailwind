@@ -1,19 +1,17 @@
 <!-- Please remove this file from your project -->
 <template>
   <div class="min-h-screen md:px-0 px-5 mt-4 md:mt-8">
-    <div
-      :class="['h-60 md:h-80 w-full overflow-hidden rounded-lg']"
-    >
-      <img
+    <div :class="['h-60 md:h-80 w-full overflow-hidden rounded-lg']">
+      <!-- <img
         class="object-cover h-full w-full"
         src="/images/dc_08-copy.jpg"
         alt=""
-      />
+      /> -->
+      <LazyAccordiansSlide :slides="resources" />
     </div>
 
-    <!-- <LazyAccordiansSlide :slides="resources" /> -->
     <div
-      class="bg-[#81d8d0] text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4"
+      class="bg-[#333333] text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4"
     >
       <div
         class="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center"
@@ -23,7 +21,9 @@
           >We Are Daikin Official Channel Partner</span
         >
       </div>
-      <div class="md:w-28 mr-4 whitespace-nowrap bg-[#333333] text-white p-2 rounded-md">
+      <div
+        class="md:w-28 mr-4 whitespace-nowrap bg-[#ffffff0d] text-white py-2 px-4 rounded-md"
+      >
         <button type="submit" @click="$router.push('/contact')">
           Get in Touch
         </button>
@@ -33,11 +33,13 @@
       class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between md:space-x-4 mt-8"
     >
       <div class="md:w-2/3">
-        <div class="text-2xl text-gray-600 leading-7">This is dummay Title</div>
-        <div class="text-2xl text-gray-600 leading-5 py-2">
+        <div class="text-2xl text-[#333333] leading-7 font-bold">
+          This is dummay Title
+        </div>
+        <div class="text-2xl text-[#333333] leading-5 py-4 font-semibold">
           This is dummay Sub TitleTitle
         </div>
-        <p>
+        <p class="text-base leading-5 text-[#333333]">
           This text is dummay. This text is dummay. This text is dummay. This
           text is dummay. This text is dummay. This text is dummay. This text is
           dummay. This text is dummay. This text is dummay. This text is dummay.
@@ -49,9 +51,11 @@
           dummay.
         </p>
       </div>
-      <div class="md:w-1/3 order-first md:order-last">
+      <div
+        class="md:w-1/3 order-first md:order-last hover:scale-125 transition-all duration-500 cursor-pointer"
+      >
         <div>
-          <video width="400" controls>
+          <video class="w-full" controls>
             <source src="/images/mov_bbb.mp4" type="video/mp4" />
             Your browser does not support HTML video.
           </video>
@@ -363,6 +367,11 @@
 <script>
 export default {
   name: "NuxtTutorial",
+  data() {
+    return {
+      slideIndex: 1,
+    };
+  },
   computed: {
     resources() {
       return [
