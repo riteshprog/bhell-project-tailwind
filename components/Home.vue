@@ -6,18 +6,18 @@
     </div>
 
     <div
-      class="bg-[#333333] text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4"
+      class="bg-[#333333] text-white flex flex-col md:flex-row space-y-6 md:space-y-0 items-center justify-between mt-8 py-4 rounded-md"
     >
       <div
         class="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center"
       >
-        <img src="/images/logo.png" alt="" class="md:w-20" srcset="" />
-        <span class="ml-4 font-bold text-2xl text-center"
+        <img src="/images/logo.png" alt="" srcset="" />
+        <span class="ml-4 font-bold text-3xl text-center"
           >We Are Daikin Official Channel Partner</span
         >
       </div>
       <div
-        class="md:w-28 mr-4 whitespace-nowrap bg-[#81d8d0] text-white py-2 px-4 rounded-md"
+        class="whitespace-nowrap bg-[#81d8d0] text-white font-bold py-2 px-4 mr-2 rounded-md"
       >
         <button type="submit" @click="$router.push('/contact')">
           Get in Touch
@@ -59,8 +59,35 @@
       class="my-12 flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between md:space-x-4"
     >
       <div class="flex flex-col shadow md:space-y-2 p-4 md:w-1/4">
-        <span class="text-2xl leading-5 text-gray-600 font-bold inline-flex"
-          ><svg
+        <span class="flex">
+          <svg
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            if="svgComponent"
+            class="mx-1 w-5 h-5 my-auto text-[#81d8d0]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+            ></path>
+          </svg>
+          <span
+            data-target="150"
+            class="count text-2xl leading-5 text-gray-600 font-bold inline-flex"
+            >0</span
+          >
+        </span>
+        <span class="text-sm leading-5 text-gray-600"
+          ><span class="font-bold">Hard Workers</span> consequuntur quae qui
+          deca rode</span
+        >
+      </div>
+      <div class="flex flex-col shadow md:space-y-2 p-4 md:w-1/4">
+        <span class="flex">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -74,16 +101,21 @@
               d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
             />
           </svg>
-          232</span
-        >
+          <span
+            data-target="232"
+            class="count text-2xl leading-5 text-gray-600 font-bold inline-flex"
+          >
+            0</span
+          >
+        </span>
         <span class="text-sm leading-5 text-gray-600"
           ><span class="font-bold">Happy Clients</span> consequuntur quae qui
           deca rode</span
         >
       </div>
       <div class="flex flex-col shadow md:space-y-2 p-4 md:w-1/4">
-        <span class="text-2xl leading-5 text-gray-600 font-bold inline-flex"
-          ><svg
+        <span class="flex">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -96,17 +128,22 @@
               stroke-linejoin="round"
               stroke-width="2"
               d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-            ></path></svg
-          >521</span
-        >
+            ></path>
+          </svg>
+          <span
+            data-target="521"
+            class="count text-2xl leading-5 text-gray-600 font-bold inline-flex"
+            >0</span
+          >
+        </span>
         <span class="text-sm leading-5 text-gray-600"
           ><span class="font-bold">Projects</span> consequuntur quae qui deca
           rode</span
         >
       </div>
       <div class="flex flex-col shadow md:space-y-2 p-4 md:w-1/4">
-        <span class="text-2xl leading-5 text-gray-600 font-bold inline-flex"
-          ><svg
+        <span class="flex">
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -120,33 +157,17 @@
               d="M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z"
             />
           </svg>
-          1463</span
-        >
+
+          <span
+            data-target="1463"
+            class="count text-2xl leading-5 text-gray-600 font-bold inline-flex"
+          >
+            0</span
+          >
+        </span>
         <span class="text-sm leading-5 text-gray-600"
           ><span class="font-bold">Hours of supports</span> consequuntur quae
           qui deca rode</span
-        >
-      </div>
-      <div class="flex flex-col shadow md:space-y-2 p-4 md:w-1/4">
-        <span class="text-2xl leading-5 text-gray-600 font-bold inline-flex"
-          ><svg
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            if="svgComponent"
-            class="mx-1 w-5 h-5 my-auto text-[#81d8d0]"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
-            ></path></svg
-          >15</span
-        >
-        <span class="text-sm leading-5 text-gray-600"
-          ><span class="font-bold">Hard Workers</span> consequuntur quae qui
-          deca rode</span
         >
       </div>
     </div>
@@ -417,6 +438,27 @@ export default {
         },
       ];
     },
+  },
+  mounted() {
+    const counters = document.querySelectorAll(".count");
+    const speed = 200;
+
+    counters.forEach((counter) => {
+      const updateCount = () => {
+        const target = parseInt(+counter.getAttribute("data-target"));
+        const count = parseInt(+counter.innerText);
+        const increment = Math.trunc(target / speed);
+        console.log(increment);
+
+        if (count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 10);
+        } else {
+          count.innerText = target;
+        }
+      };
+      updateCount();
+    });
   },
 };
 </script>
