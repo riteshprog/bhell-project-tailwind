@@ -133,31 +133,31 @@
               <div class="hidden md:block mx-auto">
                 <div class="ml-10 flex items-baseline space-x-4">
                   <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:text-[#333333]  hover:border-b-2 border-[#81d8d0]  hover:text-white" -->
-                  <a
-                    href="/"
-                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
+                  <nuxt-link
+                    to="/"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-base font-semibold"
                     aria-current="page"
-                    >Home</a
+                    >Home</nuxt-link
                   >
-                  <a
-                    href="/about-us"
-                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
-                    >About Us</a
+                  <nuxt-link
+                    to="/about-us"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-base font-semibold"
+                    >About Us</nuxt-link
                   >
-                  <a
-                    href="/products"
-                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
-                    >Product</a
+                  <nuxt-link
+                    to="/products"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-base font-semibold"
+                    >VRV Product</nuxt-link
                   >
-                  <a
-                    href="/our-projects"
-                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
-                    >Our Projects</a
+                  <nuxt-link
+                    to="/our-projects"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-base font-semibold"
+                    >Our Projects</nuxt-link
                   >
-                  <a
-                    href="/contact"
-                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-sm font-medium"
-                    >Contact</a
+                  <nuxt-link
+                    to="/contact"
+                    class="text-[#81d8d0] hover:text-[#333333] hover:border-b-2 border-[#81d8d0] px-3 py-2 text-base font-semibold"
+                    >Contact</nuxt-link
                   >
                 </div>
               </div>
@@ -216,31 +216,31 @@
           ]"
         >
           <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
-            <a
-              href="/"
-              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
+            <nuxt-link
+              to="/"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-semibold"
               aria-current="page"
-              >Home</a
+              >Home</nuxt-link
             >
-            <a
-              href="/about-us"
-              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
-              >About Us</a
+            <nuxt-link
+              to="/about-us"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-semibold"
+              >About Us</nuxt-link
             >
-            <a
-              href="/products"
-              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
-              >Products</a
+            <nuxt-link
+              to="/products"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-semibold"
+              >VRV Product</nuxt-link
             >
-            <a
-              href="/our-projects"
-              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
-              >Our Projects</a
+            <nuxt-link
+              to="/our-projects"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-semibold"
+              >Our Projects</nuxt-link
             >
-            <a
-              href="contact"
-              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-medium"
-              >Contacts</a
+            <nuxt-link
+              to="/contact"
+              class="text-white hover:text-[#333333] hover:border-b-2 border-[#81d8d0] block rounded-md px-3 py-2 text-base font-semibold"
+              >Contacts</nuxt-link
             >
           </div>
         </div>

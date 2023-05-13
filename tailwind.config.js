@@ -1,14 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-  ],
   theme: {
     extend: {
+      fontFamily: {
+        Oswald: ["Oswald"],
+      },
+
       colors: {
         primary: {
           50: "#FBFDFE",
@@ -33,4 +30,14 @@ module.exports = {
     },
   },
   plugins: [],
+  purge: {
+    // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
+    content: [
+      "./components/**/*.vue",
+      "./layouts/**/*.vue",
+      "./pages/**/*.vue",
+      "./plugins/**/*.js",
+      "nuxt.config.js",
+    ],
+  },
 };

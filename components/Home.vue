@@ -2,11 +2,6 @@
 <template>
   <div class="min-h-screen md:px-0 px-5 mt-4 md:mt-8">
     <div :class="['h-60 md:h-80 w-full overflow-hidden rounded-lg']">
-      <!-- <img
-        class="object-cover h-full w-full"
-        src="/images/dc_08-copy.jpg"
-        alt=""
-      /> -->
       <LazyAccordiansSlide :slides="resources" />
     </div>
 
@@ -22,7 +17,7 @@
         >
       </div>
       <div
-        class="md:w-28 mr-4 whitespace-nowrap bg-[#ffffff0d] text-white py-2 px-4 rounded-md"
+        class="md:w-28 mr-4 whitespace-nowrap bg-[#81d8d0] text-white py-2 px-4 rounded-md"
       >
         <button type="submit" @click="$router.push('/contact')">
           Get in Touch
@@ -32,23 +27,21 @@
     <div
       class="flex flex-col md:flex-row space-y-6 md:space-y-0 justify-between md:space-x-4 mt-8"
     >
-      <div class="md:w-2/3">
-        <div class="text-2xl text-[#333333] leading-7 font-bold">
-          This is dummay Title
-        </div>
+      <div class="md:w-2/3 md:pr-16">
+        <div class="text-2xl text-[#333333] leading-7 font-bold">About us</div>
         <div class="text-2xl text-[#333333] leading-5 py-4 font-semibold">
-          This is dummay Sub TitleTitle
+          Year of Experience
         </div>
-        <p class="text-base leading-5 text-[#333333]">
-          This text is dummay. This text is dummay. This text is dummay. This
-          text is dummay. This text is dummay. This text is dummay. This text is
-          dummay. This text is dummay. This text is dummay. This text is dummay.
-          This text is dummay. This text is dummay. This text is dummay. This
-          text is dummay. This text is dummay. This text is dummay. This text is
-          dummay. This text is dummay. This text is dummay. This text is dummay.
-          This text is dummay. This text is dummay. This text is dummay. This
-          text is dummay. This text is dummay. This text is dummay. This text is
-          dummay.
+        <p class="text-base leading-5 text-[#333333] font-semibold">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
         </p>
       </div>
       <div
@@ -73,7 +66,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 text-[#81d8d0]"
           >
             <path
               stroke-linecap="round"
@@ -96,7 +89,7 @@
             viewBox="0 0 24 24"
             stroke="currentColor"
             if="svgComponent"
-            class="mx-1 w-5 h-5 my-auto"
+            class="mx-1 w-5 h-5 my-auto text-[#81d8d0]"
           >
             <path
               stroke-linecap="round"
@@ -119,7 +112,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-6 h-6 text-[#81d8d0]"
           >
             <path
               stroke-linecap="round"
@@ -141,7 +134,7 @@
             viewBox="0 0 24 24"
             stroke="currentColor"
             if="svgComponent"
-            class="mx-1 w-5 h-5 my-auto"
+            class="mx-1 w-5 h-5 my-auto text-[#81d8d0]"
           >
             <path
               stroke-linecap="round"
@@ -194,10 +187,7 @@
       >
         <div class="border bg-white rounded-lg shadow-md shadow-none">
           <div>
-            <img
-              src="https://cdn.wellcertified.com/static/dashboard/knowledge-base.png"
-              class="w-full rounded-t-md"
-            />
+            <img src="/images/slide-5.jpg" class="w-full rounded-t-md h-32" />
           </div>
           <div class="p-4">
             <div class="font-bold text-primary-900"></div>
@@ -209,24 +199,29 @@
               <div>
                 <div>
                   <p class="text-base font-semibold text-primary-900">
-                    Daikin for All Your Needs
+                    Daikin ACs for Extreme Temperatures
                   </p>
-                  <p
-                    class="text-sm font-normal text-primary-900 text-opacity-50"
-                  >
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
+                  <p class="text-sm font-normal text-primary-900">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum. like
+                    Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                  <a
-                    href="https://resources.wellcertified.com/tools/driving-better-investment-decisions/"
-                    target="_blank"
-                    class="text-sm font-normal text-primary-600"
-                    >Learn More</a
-                  >
+                  <div class="mt-2">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="text-sm font-normal text-white bg-[#81d8d0] rounded-md p-2"
+                      >Download</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -234,10 +229,7 @@
         </div>
         <div class="border bg-white rounded-lg shadow-md shadow-none">
           <div>
-            <img
-              src="https://cdn.wellcertified.com/static/dashboard/knowledge-base.png"
-              class="w-full rounded-t-md"
-            />
+            <img src="/images/slide-3.jpg" class="w-full rounded-t-md h-32" />
           </div>
           <div class="p-4">
             <div class="font-bold text-primary-900"></div>
@@ -249,24 +241,28 @@
               <div>
                 <div>
                   <p class="text-base font-semibold text-primary-900">
-                    Daikin for All Your Needs
+                    Residential ACs - Innovation that cools you and the planet.
                   </p>
-                  <p
-                    class="text-sm font-normal text-primary-900 text-opacity-50"
-                  >
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
+                  <p class="text-sm font-normal text-primary-900">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                  <a
-                    href="https://resources.wellcertified.com/tools/driving-better-investment-decisions/"
-                    target="_blank"
-                    class="text-sm font-normal text-blue-600"
-                    >Learn More</a
-                  >
+                  <div class="mt-2">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="text-sm font-normal text-white bg-[#81d8d0] rounded-md p-2"
+                      >Download</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -274,10 +270,7 @@
         </div>
         <div class="border bg-white rounded-lg shadow-md shadow-none">
           <div>
-            <img
-              src="https://cdn.wellcertified.com/static/dashboard/knowledge-base.png"
-              class="w-full rounded-t-md"
-            />
+            <img src="/images/slide-4.jpg" class="w-full rounded-t-md h-32" />
           </div>
           <div class="p-4">
             <div class="font-bold text-primary-900"></div>
@@ -289,24 +282,28 @@
               <div>
                 <div>
                   <p class="text-base font-semibold text-primary-900">
-                    Daikin for All Your Needs
+                    Light Commercial - Best of designs with High efficiency.
                   </p>
-                  <p
-                    class="text-sm font-normal text-primary-900 text-opacity-50"
-                  >
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
-                    This is dummy test. This is dummy test. This is dummy test.
+                  <p class="text-sm font-normal text-primary-900">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries,
+                    but also the leap into electronic typesetting, remaining
+                    essentially unchanged. It was popularised in the 1960s with
+                    the release of Letraset sheets containing Lorem Ipsum
+                    passages, and more recently with desktop publishing software
+                    like Aldus PageMaker including versions of Lorem Ipsum.
                   </p>
-                  <a
-                    href="https://resources.wellcertified.com/tools/driving-better-investment-decisions/"
-                    target="_blank"
-                    class="text-sm font-normal text-primary-600"
-                    >Learn More</a
-                  >
+                  <div class="mt-2">
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="text-sm font-normal text-white bg-[#81d8d0] rounded-md p-2"
+                      >Download</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -361,6 +358,27 @@
         </template>
       </LazyAccordiansBace>
     </div>
+    <div class="my-12">
+      <h1 class="my-6 font-bold text-lg leading-5">Our VRV Products</h1>
+      <LazyAccordiansSlide :slides="resources1" />
+    </div>
+    <div class="my-12">
+      <h1 class="text-2xl font-bold leading-7 text-[#333333]">Our Vision</h1>
+      <p class="text-base text-[#333333] font-semibold leading-5 mt-4">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </div>
+    <div class="my-12">
+      <img src="/images/Map.webp" alt="" class="w-full" srcset="" />
+    </div>
   </div>
 </template>
 
@@ -383,6 +401,19 @@ export default {
         },
         {
           bgImg: `/images/dc_14-copy.jpg`,
+        },
+      ];
+    },
+    resources1() {
+      return [
+        {
+          bgImg: `/images/slide-2.jpg`,
+        },
+        {
+          bgImg: `/images/slide-3.jpg`,
+        },
+        {
+          bgImg: `/images/slide-4.jpg`,
         },
       ];
     },
