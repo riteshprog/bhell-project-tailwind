@@ -11,8 +11,7 @@
       <div
         class="flex flex-col md:flex-row space-y-6 md:space-y-0 items-center"
       >
-        <img src="/images/logo.png" alt="" srcset="" />
-        <span class="ml-4 font-bold text-3xl text-center"
+        <span class="ml-4 font-bold text-2xl text-center"
           >We Are Daikin Official Channel Partner</span
         >
       </div>
@@ -75,7 +74,7 @@
             ></path>
           </svg>
           <span
-            data-target="150"
+            data-target="200"
             class="count text-2xl leading-5 text-gray-600 font-bold inline-flex"
             >0</span
           >
@@ -381,7 +380,15 @@
     </div>
     <div class="my-12">
       <h1 class="my-6 font-bold text-lg leading-5">Our VRV Products</h1>
-      <LazyAccordiansSlide :slides="resources1" />
+      <vue-tiny-slider v-bind="tinySliderOptions">
+        <div v-for="(slide, i) in resources1" :key="i">
+          <div>
+            <img :src="slide.bgImg" alt="" srcset="" />
+          </div>
+        </div>
+      </vue-tiny-slider>
+
+      <!-- <LazyAccordiansSlide :slides="resources1" /> -->
     </div>
     <div class="my-12">
       <h1 class="text-2xl font-bold leading-7 text-[#333333]">Our Vision</h1>
@@ -406,8 +413,27 @@
 <script>
 export default {
   name: "NuxtTutorial",
+  head() {
+    return {
+      link: [
+        {
+          rel: "stylesheet",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.1/tiny-slider.css",
+        },
+      ],
+    };
+  },
   data() {
     return {
+      tinySliderOptions: {
+        mouseDrag: true,
+        loop: false,
+        items: 3,
+        swipeAngle: 45,
+        nav: false,
+        autoplay: true,
+        speed: 400,
+      },
       slideIndex: 1,
     };
   },
@@ -427,6 +453,15 @@ export default {
     },
     resources1() {
       return [
+        {
+          bgImg: `/images/slide-2.jpg`,
+        },
+        {
+          bgImg: `/images/slide-3.jpg`,
+        },
+        {
+          bgImg: `/images/slide-4.jpg`,
+        },
         {
           bgImg: `/images/slide-2.jpg`,
         },
@@ -462,3 +497,11 @@ export default {
   },
 };
 </script>
+<style>
+.tns-controls {
+  display: none !important;
+}
+.tns-outer button {
+  display: none !important;
+}
+</style>
